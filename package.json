@@ -1,0 +1,19 @@
+{
+"tool_name": "mcp_bulk_file_writer",
+"tool_arguments": {
+"files": [
+{
+"path": "/app/frontend/src/index.js",
+"content": "import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport './index.css';\nimport App from './App';\n\nconst root = ReactDOM.createRoot(document.getElementById('root'));\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);"
+},
+{
+"path": "/app/frontend/tailwind.config.js",
+"content": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./src/**/*.{js,jsx,ts,tsx}\",\n  ],\n  theme: {\n    extend: {\n      colors: {\n        // Define primary colors based on Maleka Pharmacy branding (Emerald/Teal)\n        emerald: {\n          50: '#f0fdf4',\n          100: '#dcfae7',\n          600: '#059669',\n          700: '#047857',\n          800: '#065f46',\n        },\n        teal: {\n          50: '#f0fdfa',\n          600: '#0d9488',\n        },\n      }\n    },\n  },\n  plugins: [\n    require('@tailwindcss/line-clamp'),\n  ],\n}"
+},
+{
+"path": "/app/frontend/package.json",
+"content": "{\n  \"name\": \"maleka-pharmacy-frontend\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@tailwindcss/line-clamp\": \"^0.4.4\",\n    \"axios\": \"^1.6.8\",\n    \"react\": \"^18.3.1\",\n    \"react-dom\": \"^18.3.1\",\n    \"react-router-dom\": \"^6.23.0\",\n    \"react-scripts\": \"5.0.1\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\"react-app\", \"react-app/jest\"]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  },\n  \"devDependencies\": {\n    \"tailwindcss\": \"^3.4.3\"\n  }\n}"
+}
+]
+}
+}

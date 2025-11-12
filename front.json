@@ -1,0 +1,6 @@
+{
+"tool_name": "mcp_runner",
+"tool_arguments": {
+"command": "cd /app/frontend && npm install && npm run build"
+}
+}
